@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, assertj, gradle, hamcrest, http-client, jackson-xml, java, java-application, jdbc-hikari, junit, kafka, kafka-streams, lombok, micronaut-build, mockito, netty-server, postgres, readme, shade, slf4j-simple, testcontainers, yaml ]

@@ -1,0 +1,33 @@
+package com.example.model;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "Name",
+        "Telephone",
+        "ElectronicMail"
+})
+@Getter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor(force = true, access = AccessLevel.PUBLIC)
+@Builder
+public class ContactDTO {
+    @JsonProperty("Name")
+    private String name;
+    @JsonProperty("Telephone")
+    private String telephone;
+    @JsonProperty("ElectronicMail")
+    private String electronicMail;
+}

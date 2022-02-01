@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: micronautPoc
+#datasources:
+#  default:
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    driverClassName: org.postgresql.Driver
+#    username: postgres
+#    password: ''
+#kafka.bootstrap.servers: localhost:9092
+
+
+#MongoDB Connection
+app.data.mongodb.connection.host: localhost
+app.data.mongodb.connection.port: 27017
+app.data.mongodb.connection.database: mongopoc
+app.data.mongodb.connection.username: admin
+app.data.mongodb.connection.password: admin
+app.data.mongodb.connection.timeout: 1000
+
+
